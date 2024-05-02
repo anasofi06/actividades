@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap.min.css">
+
+<script src="https://kit.fontawesome.com/0f25780317.js"crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script>
+  <script src="js/jquery.audioControls.min.js"></script>
+
+  <script src="js/funciones.js"></script>
+
+<style>
+	body
+	{
+      background:black ;
+	}
+
+	.botoncabecera
+	{
+		background-color: red;
+	}
+
+	.col{
+		color: white;
+	}
+</style>
+
+</head>
+<body>							
+
+<div class="container">
+
+		<div class="row justify-content-between">
+			<div class="col-auto botoncabecera">
+				<div class="botones"><i class="fa-solid fa-arrow-left-long"></i></div><div>
+				
+			</div></div>
+	        <div class="col-auto botoncabecera">
+		       		<p class="d-none d-md-block">reproduciendo ahora</p>
+	        		<p class="d-block d-md-none">ahora</p>
+	        </div>
+	        <div class="col-auto botoncabecera"><div class="botones"><i class="fa-solid fa-bars"></i></div></div>
+	    </div>
+	<div class="row text-center">
+
+		<div class="col">
+			<img src="joji.jpg" width="150px" class="rounded-circle">
+
+		
+	</div>
+	</div>
+
+	<div class="row">
+		<div class="col text-center">
+			<span class="col-3 nombremp3">nombre</span>
+			
+		</div>
+		
+	</div>
+
+	<div class="row justify-content-end">		
+           
+           <span class="col-3 text-end audioTime" data-attr="timer">tiempo</span>
+
+			</div>
+
+			<hr>
+
+	<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+	  <div class="progress-bar updateProgress"></div>
+	</div>
+
+	<ul class="list-group playlist">
+	  <li class="list-group-item" data-src="audios/Diet Mountain Dew.mp3"><a href="#">Diet Mountain Dew</a></li>
+	  <li class="list-group-item" data-src="audios/Humbe - Te Lo Prometo (Lyric Video).mp3"><a href="#">Humbe - Te Lo Prometo</a></li>
+	  <li class="list-group-item" data-src="audios/Joji - Ew.mp3"><a href="#">Joji - Ew</a></li>
+	  <li class="list-group-item" data-src="audios/Joji - Run (Official Video).mp3"><a href="#">Joji - Run</a></li>
+	  <li class="list-group-item"  data-src="audios/U R SUCH A LAME - RIXXIA , RIVVAA (Subtitulada en español y lyrics).mp3"><a href="#">U R SUCH A LAME - RIXXIA , RIVVAA</a></li>
+	</ul>
+
+</div>
+
+</body>
+</html>
